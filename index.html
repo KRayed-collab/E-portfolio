@@ -3,10 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Khan Rayed | Futuristic Portfolio</title>
+    <meta name="description" content="E-Portfolio of Khan Rayed - Computer Science Graduate">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- 
+    ================================================================================
+    🚀 HOW TO DEPLOY THIS PORTFOLIO USING GITHUB PAGES 🚀
+    ================================================================================
+    1. Initialize a git repository locally: `git init`
+    2. Add all files: `git add .`
+    3. Commit changes: `git commit -m "Initial commit"`
+    4. Create a new public repository on GitHub (e.g. named 'portfolio')
+    5. Link local to remote: `git remote add origin <your-repo-url>`
+    6. Push to GitHub: `git push -u origin main`
+    7. On GitHub, go to Repository Settings -> "Pages" (on the left sidebar).
+    8. Under "Source", select "Deploy from a branch".
+    9. Select your "main" branch and save.
+    10. Wait a minute or two, and GitHub will provide you with a live URL!
+    ================================================================================
+    -->
 </head>
 <body>
-    <h1>Main Heading</h1>
-    <p>This is a paragraph of visible content.</p>
+    <!-- Background Atmospheric Effects -->
+    <div class="bg-effects">
+        <div class="orb orb-teal"></div>
+        <div class="orb orb-pink"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">KR<span class="neon-dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="glass-container hero-content">
+                <p class="greeting">Hello, world! I am</p>
+                <h1 class="glitch-text" data-text="Khan Rayed">Khan Rayed</h1>
+                <h2 class="subtitle">Computer Science Graduate</h2>
+                <p class="education">Vidyalankar Institute of Technology</p>
+                
+                <div class="divider"></div>
+                
+                <p class="intro">
+                    I am a passionate software developer dedicated to crafting clean, efficient, and forward-thinking digital experiences.
+                </p>
+                
+                <blockquote class="quote">
+                    “Always learning, always building, always improving.”
+                </blockquote>
+
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Initiatives<span class="neon-dot">_</span></h2>
+            <div class="grid-container">
+                <!-- Project 1 -->
+                <a href="https://github.com/KRayed-collab/To-Do.git" target="_blank" class="card glass-card project-card">
+                    <div class="card-content">
+                        <h3>To-Do App</h3>
+                        <p>A comprehensive Notion-style task management application featuring drag-and-drop widget layout, dark/light mode, and seamless usability.</p>
+                        <div class="tech-stack">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://github.com/KRayed-collab/Path_Finder.git" target="_blank" class="card glass-card project-card">
+                    <div class="card-content">
+                        <h3>Path Finder</h3>
+                        <p>An interactive, web-based map application centered on Mumbai implementing dynamic routing and real-world road navigation via the OSRM API.</p>
+                        <div class="tech-stack">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">OSRM API</span>
+                            <span class="tag">Leaflet</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <div class="card glass-card project-card no-link">
+                    <div class="card-content">
+                        <h3>Smart India Hackathon</h3>
+                        <p>Developed innovative solutions addressing real-world problem statements. Collaborated with a team under high-pressure scenarios to deliver impactful software components.</p>
+                        <div class="tech-stack">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Arsenal<span class="neon-dot">_</span></h2>
+            <div class="skills-grid">
+                
+                <div class="glass-card skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="tag glow">HTML5</span>
+                        <span class="tag glow">CSS3</span>
+                        <span class="tag glow">JavaScript</span>
+                        <span class="tag glow">React</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag glow">Java</span>
+                        <span class="tag glow">Python</span>
+                        <span class="tag glow">Node.js</span>
+                        <span class="tag glow">Express</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <h3>Database & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag glow">MySQL</span>
+                        <span class="tag glow">MongoDB</span>
+                        <span class="tag glow">Git/GitHub</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Transmit<span class="neon-dot">_</span></h2>
+            <div class="glass-card form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="input-group">
+                        <label for="name">Identification (Name)</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Comms Address (Email)</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Transmission (Message)</label>
+                        <textarea id="message" rows="5" required placeholder="Enter your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Initialize Transfer</button>
+                    <div id="formStatus" class="form-status hidden">
+                        Transmission successful! I will get back to you shortly.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass-nav">
+        <p>&copy; 2026 Khan Rayed. Built for the future.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
